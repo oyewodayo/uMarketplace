@@ -4,6 +4,7 @@ import { IProductRepository } from "../interfaces/iProductRepository";
 
 export class ProductInteractor implements IProductInteractor {
 
+    //Repository
     private repository: IProductRepository;
 
     constructor(repository: IProductRepository){
