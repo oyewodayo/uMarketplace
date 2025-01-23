@@ -1,2 +1,2 @@
-/products-service/node_modules
-/products-service/.env
+node_modules/
+.env
