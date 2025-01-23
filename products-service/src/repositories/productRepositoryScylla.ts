@@ -41,7 +41,7 @@ async create({name, description, price, stock}:Product): Promise<Product>{
         return product;
     }
 
-    async  update(id:number, stock: number): Promise<Product>{
+    async  update(data:Product): Promise<Product>{
 
         const query = `
             UPDATE products
@@ -49,18 +49,18 @@ async create({name, description, price, stock}:Product): Promise<Product>{
             WHERE id = ?
         `
 
-        const params = [stock, id];
+        const params = [data.stock, data.id];
         await this.client.execute(query, params, {prepare:true});
 
         const result = await this.client.execute(
             'SELECT * FROM products WHERE id = ?',
-            [id],
+            [data.id],
             { prepare: true }
         );
 
         const product = this.mapToProduct(result.first());
         if (!product) {
-            throw new Error(`Product with id ${id} not found`);
+            throw new Error(`Product with id ${data.id} not found`);
         }
         return product;
     }
