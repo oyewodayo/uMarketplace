@@ -1,6 +1,7 @@
 import { off } from "process";
 import { IProductInteractor } from "../interfaces/iProductInteractor";
 import { IProductRepository } from "../interfaces/iProductRepository";
+import { Product } from "../entities/Product";
 
 export class ProductInteractor implements IProductInteractor {
 
@@ -15,9 +16,9 @@ export class ProductInteractor implements IProductInteractor {
         return this.repository.create(input);
     }
 
-    async updateStock(id: number, stock: number) {
+    async updateStock(data:Product) {
 
-        return this.repository.update(id,stock);
+        return this.repository.update(data);
     }
 
     async getProducts(limit: number, offset: number) {
