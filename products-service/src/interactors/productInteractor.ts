@@ -15,7 +15,7 @@ export class ProductInteractor implements IProductInteractor {
         return this.repository.create(input);
     }
 
-    async updateStock(data:Product) {
+    async updateStock(id:number, stock:number) {
 
         return this.repository.update(data);
     }
