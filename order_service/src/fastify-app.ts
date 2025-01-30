@@ -3,16 +3,41 @@ import cors from "@fastify/cors";
 import { cartRouter } from "./routes/cart.routes";
 import { orderRouter } from "./routes/order.routes";
 
+// Add clustering information to logger
 const fastify = Fastify({
-  logger: true,
+    logger: {
+        level: 'info',
+        serializers: {
+            req(request) {
+                return {
+                    method: request.method,
+                    url: request.url,
+                    worker: process.pid
+                };
+            }
+        }
+    }
 });
 
-// Register the CORS plugin
+// Register plugins
 fastify.register(cors);
 
-// Register all routes
-fastify.register(cartRouter)
-fastify.register(orderRouter)
+// Add worker ID to all responses
+fastify.addHook('preHandler', async (request, reply) => {
+    reply.header('X-Worker-Id', process.pid);
+});
 
+// Register routes
+fastify.register(cartRouter);
+fastify.register(orderRouter);
+
+// Health check endpoint
+fastify.get('/health', async () => {
+    return {
+        status: 'ok',
+        worker: process.pid,
+        timestamp: new Date().toISOString()
+    };
+});
 
 export default fastify;

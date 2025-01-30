@@ -1,23 +1,54 @@
-import fastify from "./fastify-app"; // Ensure this exports a Fastify instance
+import cluster from 'cluster';
+import os from 'os';
+import { startServer } from './index';
+import { Worker } from 'cluster';
+import fastify from './fastify-app'; 
 
-const PORT = parseInt(process.env.PORT || '9000', 10);
+const numCPUs = os.cpus().length;
 
+if (cluster.isPrimary) {
+    // Master process
+    console.log(`Master process ${process.pid} is running`);
+    console.log(`Number of CPUs: ${numCPUs}`);
 
+    // Fork workers
+    for (let i = 0; i < numCPUs; i++) {
+        cluster.fork();
+    }
 
-fastify.get('/', async (request, reply) => {
-    return { message: 'Welcome to the Order Service API' };
-  });
+    // Handle worker failures
+    cluster.on('exit', (worker: Worker, code: number, signal: string) => {
+        console.log(`Worker ${worker.process.pid} died. Starting a new worker...`);
+        cluster.fork();
+    });
 
-// Function to start the server
-export const startServer = async () => {
-  try {
-    await fastify.listen({ port: PORT, host: '0.0.0.0' });
-    console.log(`Server is up and running on port ${PORT}`);
-  } catch (err) {
-    console.error('Error starting server:', err);
-    process.exit(1);
-  }
-};
+    // Graceful shutdown
+    process.on('SIGTERM', () => {
+        console.log('Shutting down cluster...');
+        // Fix for Object.values(cluster.workers)
+        if (cluster.workers) {
+            Object.values(cluster.workers).forEach((worker) => {
+                if (worker) {
+                    worker.send('shutdown');
+                }
+            });
+        }
+    });
+} else {
+    // Worker process
+    console.log(`Worker ${process.pid} started`);
+    startServer();
 
-// Start the server
-startServer();
+    // Handle graceful shutdown
+    process.on('message', async (msg) => {
+        if (msg === 'shutdown') {
+            try {
+                await fastify.close();
+                process.exit(0);
+            } catch (err) {
+                console.error('Error during shutdown:', err);
+                process.exit(1);
+            }
+        }
+    });
+}
