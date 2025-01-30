@@ -1,7 +1,7 @@
 
 
 export interface IProductInteractor {
-    createProduct(input: any);
-    updateStock(data: Object);
-    getProducts(limit: number, offset: number);
+    createProduct(input: any): Promise<any>;
+    updateStock(id: number, stock: number): Promise<any>;
+    getProducts(limit: number, offset: number): Promise<any>;
 }

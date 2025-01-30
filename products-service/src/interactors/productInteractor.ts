@@ -1,11 +1,9 @@
-import { off } from "process";
 import { IProductInteractor } from "../interfaces/iProductInteractor";
 import { IProductRepository } from "../interfaces/iProductRepository";
 import { Product } from "../entities/Product";
 
 export class ProductInteractor implements IProductInteractor {
 
-    //Repository
     private repository: IProductRepository;
 
     constructor(repository: IProductRepository){
@@ -13,6 +11,7 @@ export class ProductInteractor implements IProductInteractor {
     }
 
     async createProduct(input: any) {
+        
         return this.repository.create(input);
     }
 

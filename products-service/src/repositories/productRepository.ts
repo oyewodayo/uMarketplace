@@ -1,7 +1,5 @@
-import { Pool } from "pg";
 import { Product } from "../entities/Product";
 import { IProductRepository } from "../interfaces/iProductRepository";
-import { pgClient } from "../dbConnectionPG"; // Reuse your pgClient function
 import { PrismaClient } from "@prisma/client";
 
 export class ProductRepository implements IProductRepository {
@@ -12,7 +10,6 @@ export class ProductRepository implements IProductRepository {
        this._prisma = new PrismaClient();
     }
 
-    // data:{ name, description, price, stock }
     async create(data: Product): Promise<Product> {
         
         return this._prisma.product.create({data,});
@@ -23,12 +20,6 @@ export class ProductRepository implements IProductRepository {
         return this._prisma.product.update({
             where: {id: data.id},
             data
-        });
-    }
-    async delete(id: any) {
-        
-        return this._prisma.product.delete({
-            where: {id},
         });
     }
 
@@ -50,5 +41,12 @@ export class ProductRepository implements IProductRepository {
         }
 
         throw new Error("Product not found");
+    }
+
+    async delete(id: any): Promise<Product> {
+        
+        return this._prisma.product.delete({
+            where: {id},
+        });
     }
 }
