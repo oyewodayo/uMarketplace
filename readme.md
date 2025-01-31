@@ -2,10 +2,10 @@ Order Service and Product Service API with Node.js Clustering
 A scalable microservice for handling orders, built with Fastify and utilizing Node.js clustering for improved performance.
 Features
 
-Multi-core processing using Node.js Clusters
+Multi-core processing using Node.js Clusters and Fastify
 RESTful API built with Fastify
 Order and Cart management
-Database integration with Prisma
+Database integration with Prisma and Drizzle
 CORS enabled
 Graceful shutdown handling
 

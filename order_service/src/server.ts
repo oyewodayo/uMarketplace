@@ -25,7 +25,7 @@ if (cluster.isPrimary) {
     // Graceful shutdown
     process.on('SIGTERM', () => {
         console.log('Shutting down cluster...');
-        // Fix for Object.values(cluster.workers)
+       
         if (cluster.workers) {
             Object.values(cluster.workers).forEach((worker) => {
                 if (worker) {

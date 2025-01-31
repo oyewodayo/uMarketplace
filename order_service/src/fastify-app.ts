@@ -3,7 +3,7 @@ import cors from "@fastify/cors";
 import { cartRouter } from "./routes/cart.routes";
 import { orderRouter } from "./routes/order.routes";
 
-// Add clustering information to logger
+
 const fastify = Fastify({
     logger: {
         level: 'info',
