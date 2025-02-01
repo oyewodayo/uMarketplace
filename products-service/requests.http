@@ -1,3 +1,5 @@
 ### GET PRODUCTS
-GET http://localhost:3000/products
-Content-Type: application/json
+
+curl -X POST http://localhost:3000/cart \
+-H "Content-Type: application/json" \
+-d '{"key": "value"}'

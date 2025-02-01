@@ -8,8 +8,8 @@ const numCPUs = os.cpus().length;
 
 if (cluster.isPrimary) {
     // Master process
-    console.log(`Master process ${process.pid} is running`);
-    console.log(`Number of CPUs: ${numCPUs}`);
+    fastify.log.info(`Master process ${process.pid} is running`);
+    fastify.log.info(`Number of CPUs: ${numCPUs}`);
 
     // Fork workers
     for (let i = 0; i < numCPUs; i++) {
@@ -18,13 +18,13 @@ if (cluster.isPrimary) {
 
     // Handle worker failures
     cluster.on('exit', (worker: Worker, code: number, signal: string) => {
-        console.log(`Worker ${worker.process.pid} died. Starting a new worker...`);
+        fastify.log.info(`Worker ${worker.process.pid} died. Starting a new worker...`);
         cluster.fork();
     });
 
     // Graceful shutdown
     process.on('SIGTERM', () => {
-        console.log('Shutting down cluster...');
+        fastify.log.info('Shutting down cluster...');
        
         if (cluster.workers) {
             Object.values(cluster.workers).forEach((worker) => {
@@ -36,7 +36,7 @@ if (cluster.isPrimary) {
     });
 } else {
     // Worker process
-    console.log(`Worker ${process.pid} started`);
+    fastify.log.info(`Worker ${process.pid} started`);
     startServer();
 
     // Handle graceful shutdown
@@ -46,7 +46,7 @@ if (cluster.isPrimary) {
                 await fastify.close();
                 process.exit(0);
             } catch (err) {
-                console.error('Error during shutdown:', err);
+                fastify.log.error('Error during shutdown:', err);
                 process.exit(1);
             }
         }

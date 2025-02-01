@@ -6,7 +6,8 @@ import { orderRouter } from "./routes/order.routes";
 
 const fastify = Fastify({
     logger: {
-        level: 'info',
+        level: 'trace',
+        file: './log',
         serializers: {
             req(request) {
                 return {
@@ -26,6 +27,7 @@ fastify.register(cors);
 fastify.addHook('preHandler', async (request, reply) => {
     reply.header('X-Worker-Id', process.pid);
 });
+
 
 // Register routes
 fastify.register(cartRouter);

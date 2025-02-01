@@ -14,9 +14,9 @@ fastify.get('/', async (request, reply) => {
 export const startServer = async () => {
     try {
         await fastify.listen({ port: PORT, host: '0.0.0.0' });
-        console.log(`Worker ${process.pid} is listening on port ${PORT}`);
+        fastify.log.info(`Worker ${process.pid} is listening on port ${PORT}`);
     } catch (err) {
-        console.error('Error starting server:', err);
+        fastify.log.error('Error starting server:', err);
         process.exit(1);
     }
 };
