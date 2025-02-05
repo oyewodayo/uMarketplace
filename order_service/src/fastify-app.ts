@@ -1,4 +1,5 @@
 import Fastify from "fastify";
+import fastifyHelmet from "@fastify/helmet";
 import cors from "@fastify/cors";
 import { cartRouter } from "./routes/cart.routes";
 import { orderRouter } from "./routes/order.routes";
@@ -21,15 +22,15 @@ const fastify = Fastify({
     }
 });
 
-fastify.register(cors);
+// fastify.register(cors);
 
+// fastify.register(fastifyHelmet);
 
 fastify.register(fastifyRateLimit, {
     max: 80, 
     timeWindow: "1 minute"
 });
 
-// Add worker ID to all responses
 fastify.addHook('preHandler', async (request, reply) => {
     reply.header('X-Worker-Id', process.pid);
 });

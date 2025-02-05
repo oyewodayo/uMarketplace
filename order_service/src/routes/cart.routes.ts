@@ -1,7 +1,6 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import * as service from "../service/cart.service";
 import * as repository from "../repository/cart.repository"
-import { ValidateRequest } from "../utils/validator";
 import { CartResponseSchema, CartRequestSchema, CardEditRequestInput} from "../interfaces/schemas/cartSchema";
 
 
@@ -37,7 +36,7 @@ export const cartRouter = async (fastify: FastifyInstance)=>{
         try {
             const response = await service.GetCart(req.body, repo);
        
-           
+           console.log("Cart")
             return res.status(200).send(response);
         } catch (error) {
             console.error(error);

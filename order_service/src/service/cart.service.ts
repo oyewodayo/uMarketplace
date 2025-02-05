@@ -1,10 +1,10 @@
 import { error } from "console";
 import { CartRepositoryType } from "../types/repository.type"
-import { GetproductDetails } from "../utils/broker";
+import { GetProductDetails } from "../utils/broker";
 
 export const  CreateCart = async (input: any, repo:CartRepositoryType)=> {
 
-    const product = await GetproductDetails(input.productId);
+    const product = await GetProductDetails(input.productId);
 
     if (product.stock < input.qty) {
         throw error

@@ -1,16 +1,27 @@
-import { FastifyInstance } from "fastify";
+import { FastifyInstance, FastifyRequest, FastifyReply } from "fastify";
 import { ProductRepository } from "../repositories/productRepository";
-import { ProductInteractor } from "../interactors/productInteractor";
+import { CatalogService } from "../services/product.service";
 import { ProductController } from "../controllers/ProductController";
+import { ProductQueryString, ProductParams, UpdateStockBody } from "../interfaces/productInterfaces";
 
-const repository = new ProductRepository();
-const interactor = new ProductInteractor(repository);
+export const productRouter = async (fastify: FastifyInstance) => {
+  const repository = new ProductRepository();
+  const catalogService = new CatalogService(repository);
+  const controller = new ProductController(catalogService);
 
-const controller = new ProductController(interactor);
+  fastify.post("/products", (req: FastifyRequest, res: FastifyReply) =>
+    controller.onCreateProduct(req, res)
+  );
 
+  fastify.get<{ Querystring: ProductQueryString }>("/products", (req, res) =>
+    controller.onGetProducts(req, res)
+  );
 
-export const productRouter = async (fastify: FastifyInstance)=>{
-    fastify.post("${}/products", controller.onCreateProduct.bind(controller));
-    fastify.get("/products", controller.onGetProducts.bind(controller));
-    fastify.put("/products/:id", controller.onUpdateStock.bind(controller));
-}
+  fastify.patch<{ Params: ProductParams; Body: UpdateStockBody }>("/products/:id", (req, res) =>
+    controller.onUpdateStock(req, res)
+  );
+
+  fastify.put<{ Params: ProductParams; Body: UpdateStockBody }>("/products/:id", (req, res) =>
+    controller.onUpdateStock(req, res)
+  );
+};

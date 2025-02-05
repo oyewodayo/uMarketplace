@@ -1,125 +1,208 @@
-{"level":30,"time":1738439852754,"pid":4072,"hostname":"Temidayo","msg":"Master process 4072 is running"}
-{"level":30,"time":1738439852754,"pid":4072,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
-{"level":30,"time":1738439857545,"pid":4072,"hostname":"Temidayo","msg":"Worker 9292 died. Starting a new worker..."}
-{"level":30,"time":1738439857661,"pid":4072,"hostname":"Temidayo","msg":"Worker 2920 died. Starting a new worker..."}
-{"level":30,"time":1738439857864,"pid":4072,"hostname":"Temidayo","msg":"Worker 3192 died. Starting a new worker..."}
-{"level":30,"time":1738439857886,"pid":4072,"hostname":"Temidayo","msg":"Worker 1616 died. Starting a new worker..."}
-{"level":30,"time":1738439857931,"pid":4072,"hostname":"Temidayo","msg":"Worker 6460 died. Starting a new worker..."}
-{"level":30,"time":1738439872041,"pid":4228,"hostname":"Temidayo","msg":"Master process 4228 is running"}
-{"level":30,"time":1738439872042,"pid":4228,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
-{"level":30,"time":1738439895407,"pid":3488,"hostname":"Temidayo","msg":"Worker 3488 started"}
-{"level":30,"time":1738439895427,"pid":4560,"hostname":"Temidayo","msg":"Worker 4560 started"}
-{"level":30,"time":1738439895613,"pid":4560,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895613,"pid":4560,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895613,"pid":4560,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895613,"pid":4560,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895613,"pid":4560,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895613,"pid":4560,"hostname":"Temidayo","msg":"Worker 4560 is listening on port 9000"}
-{"level":30,"time":1738439895617,"pid":3488,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895617,"pid":3488,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895617,"pid":3488,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895617,"pid":3488,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895618,"pid":3488,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895618,"pid":3488,"hostname":"Temidayo","msg":"Worker 3488 is listening on port 9000"}
-{"level":30,"time":1738439895490,"pid":4456,"hostname":"Temidayo","msg":"Worker 4456 started"}
-{"level":30,"time":1738439895654,"pid":4456,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895654,"pid":4456,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895654,"pid":4456,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895654,"pid":4456,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895654,"pid":4456,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895654,"pid":4456,"hostname":"Temidayo","msg":"Worker 4456 is listening on port 9000"}
-{"level":30,"time":1738439895580,"pid":10476,"hostname":"Temidayo","msg":"Worker 10476 started"}
-{"level":30,"time":1738439895567,"pid":4736,"hostname":"Temidayo","msg":"Worker 4736 started"}
-{"level":30,"time":1738439895717,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895717,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895717,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895717,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895717,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895718,"pid":10476,"hostname":"Temidayo","msg":"Worker 10476 is listening on port 9000"}
-{"level":30,"time":1738439895716,"pid":4736,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895716,"pid":4736,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895716,"pid":4736,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895716,"pid":4736,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895716,"pid":4736,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895716,"pid":4736,"hostname":"Temidayo","msg":"Worker 4736 is listening on port 9000"}
-{"level":30,"time":1738439895642,"pid":9240,"hostname":"Temidayo","msg":"Worker 9240 started"}
-{"level":30,"time":1738439895744,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895744,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895744,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895744,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895744,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895745,"pid":9240,"hostname":"Temidayo","msg":"Worker 9240 is listening on port 9000"}
-{"level":30,"time":1738439895672,"pid":6952,"hostname":"Temidayo","msg":"Worker 6952 started"}
-{"level":30,"time":1738439895786,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895786,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895786,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895786,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895786,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895787,"pid":6952,"hostname":"Temidayo","msg":"Worker 6952 is listening on port 9000"}
-{"level":30,"time":1738439895826,"pid":4040,"hostname":"Temidayo","msg":"Worker 4040 started"}
-{"level":30,"time":1738439895906,"pid":4040,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439895906,"pid":4040,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439895906,"pid":4040,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439895906,"pid":4040,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439895906,"pid":4040,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439895907,"pid":4040,"hostname":"Temidayo","msg":"Worker 4040 is listening on port 9000"}
-{"level":30,"time":1738439905819,"pid":5340,"hostname":"Temidayo","msg":"Master process 5340 is running"}
-{"level":30,"time":1738439905819,"pid":5340,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
-{"level":30,"time":1738439922557,"pid":6952,"hostname":"Temidayo","msg":"Worker 6952 started"}
-{"level":30,"time":1738439922558,"pid":6904,"hostname":"Temidayo","msg":"Worker 6904 started"}
-{"level":30,"time":1738439922558,"pid":12064,"hostname":"Temidayo","msg":"Worker 12064 started"}
-{"level":30,"time":1738439922672,"pid":6904,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439922672,"pid":6904,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439922672,"pid":6904,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439922672,"pid":6904,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439922672,"pid":6904,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439922673,"pid":6904,"hostname":"Temidayo","msg":"Worker 6904 is listening on port 9000"}
-{"level":30,"time":1738439922676,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439922676,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439922676,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439922676,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439922676,"pid":6952,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439922676,"pid":6952,"hostname":"Temidayo","msg":"Worker 6952 is listening on port 9000"}
-{"level":30,"time":1738439922677,"pid":12064,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439922677,"pid":12064,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439922677,"pid":12064,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439922677,"pid":12064,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439922677,"pid":12064,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439922678,"pid":12064,"hostname":"Temidayo","msg":"Worker 12064 is listening on port 9000"}
-{"level":30,"time":1738439922577,"pid":4720,"hostname":"Temidayo","msg":"Worker 4720 started"}
-{"level":30,"time":1738439922708,"pid":4720,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439922708,"pid":4720,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439922708,"pid":4720,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439922708,"pid":4720,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439922708,"pid":4720,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439922709,"pid":4720,"hostname":"Temidayo","msg":"Worker 4720 is listening on port 9000"}
-{"level":30,"time":1738439922686,"pid":10476,"hostname":"Temidayo","msg":"Worker 10476 started"}
-{"level":30,"time":1738439922805,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439922805,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439922805,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439922805,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439922805,"pid":10476,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439922806,"pid":10476,"hostname":"Temidayo","msg":"Worker 10476 is listening on port 9000"}
-{"level":30,"time":1738439922778,"pid":2252,"hostname":"Temidayo","msg":"Worker 2252 started"}
-{"level":30,"time":1738439922901,"pid":2252,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439922901,"pid":2252,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439922901,"pid":2252,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439922901,"pid":2252,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439922901,"pid":2252,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439922902,"pid":2252,"hostname":"Temidayo","msg":"Worker 2252 is listening on port 9000"}
-{"level":30,"time":1738439922921,"pid":7448,"hostname":"Temidayo","msg":"Worker 7448 started"}
-{"level":30,"time":1738439923040,"pid":7448,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439923040,"pid":7448,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439923040,"pid":7448,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439923040,"pid":7448,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439923040,"pid":7448,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439923041,"pid":7448,"hostname":"Temidayo","msg":"Worker 7448 is listening on port 9000"}
-{"level":30,"time":1738439923045,"pid":9240,"hostname":"Temidayo","msg":"Worker 9240 started"}
-{"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
-{"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://172.26.144.1:9000"}
-{"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
-{"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
-{"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
-{"level":30,"time":1738439923129,"pid":9240,"hostname":"Temidayo","msg":"Worker 9240 is listening on port 9000"}
-{"level":30,"time":1738671821059,"pid":5340,"hostname":"Temidayo","msg":"Worker 10476 died. Starting a new worker..."}
-{"level":30,"time":1738671821085,"pid":5340,"hostname":"Temidayo","msg":"Worker 4720 died. Starting a new worker..."}
+{"level":30,"time":1738750448780,"pid":12116,"hostname":"Temidayo","msg":"Master process 12116 is running"}
+{"level":30,"time":1738750448780,"pid":12116,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738750484295,"pid":8220,"hostname":"Temidayo","msg":"Worker 8220 started"}
+{"level":30,"time":1738750484700,"pid":8220,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750484700,"pid":8220,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750484700,"pid":8220,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750484700,"pid":8220,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750484700,"pid":8220,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750484701,"pid":8220,"hostname":"Temidayo","msg":"Worker 8220 is listening on port 9000"}
+{"level":30,"time":1738750484570,"pid":2360,"hostname":"Temidayo","msg":"Worker 2360 started"}
+{"level":30,"time":1738750484827,"pid":2360,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750484827,"pid":2360,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750484827,"pid":2360,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750484827,"pid":2360,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750484827,"pid":2360,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750484827,"pid":2360,"hostname":"Temidayo","msg":"Worker 2360 is listening on port 9000"}
+{"level":30,"time":1738750484797,"pid":4892,"hostname":"Temidayo","msg":"Worker 4892 started"}
+{"level":30,"time":1738750484756,"pid":13200,"hostname":"Temidayo","msg":"Worker 13200 started"}
+{"level":30,"time":1738750485061,"pid":4892,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750485061,"pid":4892,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750485061,"pid":4892,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750485061,"pid":4892,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750485061,"pid":4892,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750485062,"pid":4892,"hostname":"Temidayo","msg":"Worker 4892 is listening on port 9000"}
+{"level":30,"time":1738750485077,"pid":13200,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750485077,"pid":13200,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750485077,"pid":13200,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750485077,"pid":13200,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750485077,"pid":13200,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750485078,"pid":13200,"hostname":"Temidayo","msg":"Worker 13200 is listening on port 9000"}
+{"level":30,"time":1738750485001,"pid":4944,"hostname":"Temidayo","msg":"Worker 4944 started"}
+{"level":30,"time":1738750485195,"pid":4944,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750485195,"pid":4944,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750485195,"pid":4944,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750485195,"pid":4944,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750485195,"pid":4944,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750485196,"pid":4944,"hostname":"Temidayo","msg":"Worker 4944 is listening on port 9000"}
+{"level":30,"time":1738750485075,"pid":9684,"hostname":"Temidayo","msg":"Worker 9684 started"}
+{"level":30,"time":1738750485281,"pid":9684,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750485281,"pid":9684,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750485281,"pid":9684,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750485281,"pid":9684,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750485281,"pid":9684,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750485282,"pid":9684,"hostname":"Temidayo","msg":"Worker 9684 is listening on port 9000"}
+{"level":30,"time":1738750485114,"pid":14856,"hostname":"Temidayo","msg":"Worker 14856 started"}
+{"level":30,"time":1738750485317,"pid":14856,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750485317,"pid":14856,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750485317,"pid":14856,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750485317,"pid":14856,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750485317,"pid":14856,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750485317,"pid":14856,"hostname":"Temidayo","msg":"Worker 14856 is listening on port 9000"}
+{"level":30,"time":1738750485276,"pid":8140,"hostname":"Temidayo","msg":"Worker 8140 started"}
+{"level":30,"time":1738750485398,"pid":8140,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750485399,"pid":8140,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750485399,"pid":8140,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750485399,"pid":8140,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750485399,"pid":8140,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750485399,"pid":8140,"hostname":"Temidayo","msg":"Worker 8140 is listening on port 9000"}
+{"level":30,"time":1738750695884,"pid":9212,"hostname":"Temidayo","msg":"Master process 9212 is running"}
+{"level":30,"time":1738750695885,"pid":9212,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738750731644,"pid":8060,"hostname":"Temidayo","msg":"Worker 8060 started"}
+{"level":30,"time":1738750731982,"pid":8060,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750731982,"pid":8060,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750731982,"pid":8060,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750731982,"pid":8060,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750731982,"pid":8060,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750731983,"pid":8060,"hostname":"Temidayo","msg":"Worker 8060 is listening on port 9000"}
+{"level":30,"time":1738750732335,"pid":4924,"hostname":"Temidayo","msg":"Worker 4924 started"}
+{"level":30,"time":1738750732600,"pid":4924,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732600,"pid":4924,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732600,"pid":4924,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732600,"pid":4924,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732600,"pid":4924,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732600,"pid":4924,"hostname":"Temidayo","msg":"Worker 4924 is listening on port 9000"}
+{"level":30,"time":1738750732472,"pid":13292,"hostname":"Temidayo","msg":"Worker 13292 started"}
+{"level":30,"time":1738750732468,"pid":13332,"hostname":"Temidayo","msg":"Worker 13332 started"}
+{"level":30,"time":1738750732504,"pid":5744,"hostname":"Temidayo","msg":"Worker 5744 started"}
+{"level":30,"time":1738750732499,"pid":4752,"hostname":"Temidayo","msg":"Worker 4752 started"}
+{"level":30,"time":1738750732683,"pid":13292,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732683,"pid":13292,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732683,"pid":13292,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732683,"pid":13292,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732683,"pid":13292,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732683,"pid":13292,"hostname":"Temidayo","msg":"Worker 13292 is listening on port 9000"}
+{"level":30,"time":1738750732691,"pid":13332,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732691,"pid":13332,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732691,"pid":13332,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732691,"pid":13332,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732691,"pid":13332,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732691,"pid":13332,"hostname":"Temidayo","msg":"Worker 13332 is listening on port 9000"}
+{"level":30,"time":1738750732694,"pid":5744,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732694,"pid":5744,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732694,"pid":5744,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732694,"pid":5744,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732694,"pid":5744,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732695,"pid":5744,"hostname":"Temidayo","msg":"Worker 5744 is listening on port 9000"}
+{"level":30,"time":1738750732696,"pid":4752,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732696,"pid":4752,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732696,"pid":4752,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732696,"pid":4752,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732696,"pid":4752,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732697,"pid":4752,"hostname":"Temidayo","msg":"Worker 4752 is listening on port 9000"}
+{"level":30,"time":1738750732576,"pid":14600,"hostname":"Temidayo","msg":"Worker 14600 started"}
+{"level":30,"time":1738750732591,"pid":5112,"hostname":"Temidayo","msg":"Worker 5112 started"}
+{"level":30,"time":1738750732761,"pid":14600,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732762,"pid":14600,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732762,"pid":14600,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732762,"pid":14600,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732762,"pid":14600,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732762,"pid":14600,"hostname":"Temidayo","msg":"Worker 14600 is listening on port 9000"}
+{"level":30,"time":1738750732768,"pid":5112,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738750732768,"pid":5112,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738750732768,"pid":5112,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738750732768,"pid":5112,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738750732768,"pid":5112,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738750732769,"pid":5112,"hostname":"Temidayo","msg":"Worker 5112 is listening on port 9000"}
+{"level":30,"time":1738752076048,"pid":5112,"hostname":"Temidayo","reqId":"req-1","req":{"method":"POST","url":"/cart","worker":5112},"msg":"incoming request"}
+{"level":30,"time":1738752076170,"pid":5112,"hostname":"Temidayo","err":{"message":": ","name":"AggregateError","stack":"AggregateError\n    at Function.AxiosError.from (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\node_modules\\axios\\lib\\core\\AxiosError.js:92:14)\n    at RedirectableRequest.handleRequestError (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\node_modules\\axios\\lib\\adapters\\http.js:620:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at RedirectableRequest.emit (node:domain:489:12)\n    at ClientRequest.eventHandlers.<computed> (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\node_modules\\follow-redirects\\index.js:49:24)\n    at ClientRequest.emit (node:events:518:28)\n    at ClientRequest.emit (node:domain:489:12)\n    at emitErrorEvent (node:_http_client:103:11)\n    at Socket.socketErrorListener (node:_http_client:506:5)\n    at Socket.emit (node:events:518:28)\n    at Axios.request (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async GetProductDetails (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\utils\\broker\\api.ts:23:22)\n    at async Object.CreateCart (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\service\\cart.service.ts:7:21)\n    at async Object.<anonymous> (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\routes\\cart.routes.ts:23:30)\ncaused by: AggregateError\n    at internalConnectMultiple (node:net:1121:18)\n    at afterConnectMultiple (node:net:1688:7)","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/1.7.9","Accept-Encoding":"gzip, compress, deflate, br"},"method":"get","url":"http://localhost:9001/products/145"},"code":"ECONNREFUSED"},"msg":""}
+{"level":50,"time":1738752076178,"pid":5112,"hostname":"Temidayo","err":{"type":"NotFoundError","message":"product not found","stack":"product not found: product not found\n    at new BaseError (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\utils\\error\\errors.ts:14:11)\n    at new NotFoundError (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\utils\\error\\errors.ts:46:5)\n    at GetProductDetails (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\utils\\broker\\api.ts:29:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Object.CreateCart (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\service\\cart.service.ts:7:21)\n    at async Object.<anonymous> (C:\\Users\\HP\\Desktop\\umarketplace\\order_service\\src\\routes\\cart.routes.ts:23:30)","name":"product not found","status":404},"msg":"product not found"}
+{"level":30,"time":1738752076185,"pid":5112,"hostname":"Temidayo","reqId":"req-1","res":{"statusCode":500},"responseTime":135.94390000030398,"msg":"request completed"}
+{"level":30,"time":1738752076476,"pid":5112,"hostname":"Temidayo","reqId":"req-2","req":{"method":"GET","url":"/cart","worker":5112},"msg":"incoming request"}
+{"level":30,"time":1738752076479,"pid":5112,"hostname":"Temidayo","reqId":"req-2","res":{"statusCode":200},"responseTime":2.5093000000342727,"msg":"request completed"}
+{"level":30,"time":1738752228116,"pid":8020,"hostname":"Temidayo","msg":"Master process 8020 is running"}
+{"level":30,"time":1738752228117,"pid":8020,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738752249479,"pid":8020,"hostname":"Temidayo","msg":"Worker 7344 died. Starting a new worker..."}
+{"level":30,"time":1738752249579,"pid":8020,"hostname":"Temidayo","msg":"Worker 2272 died. Starting a new worker..."}
+{"level":30,"time":1738752249868,"pid":8020,"hostname":"Temidayo","msg":"Worker 2352 died. Starting a new worker..."}
+{"level":30,"time":1738752249957,"pid":8020,"hostname":"Temidayo","msg":"Worker 3436 died. Starting a new worker..."}
+{"level":30,"time":1738752263146,"pid":12524,"hostname":"Temidayo","msg":"Master process 12524 is running"}
+{"level":30,"time":1738752263147,"pid":12524,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738752270053,"pid":12524,"hostname":"Temidayo","msg":"Worker 14972 died. Starting a new worker..."}
+{"level":30,"time":1738752270063,"pid":12524,"hostname":"Temidayo","msg":"Worker 5760 died. Starting a new worker..."}
+{"level":30,"time":1738752279655,"pid":3228,"hostname":"Temidayo","msg":"Master process 3228 is running"}
+{"level":30,"time":1738752279655,"pid":3228,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738752296452,"pid":3228,"hostname":"Temidayo","msg":"Worker 14772 died. Starting a new worker..."}
+{"level":30,"time":1738752296518,"pid":3228,"hostname":"Temidayo","msg":"Worker 3856 died. Starting a new worker..."}
+{"level":30,"time":1738752296688,"pid":3228,"hostname":"Temidayo","msg":"Worker 8092 died. Starting a new worker..."}
+{"level":30,"time":1738752296799,"pid":3228,"hostname":"Temidayo","msg":"Worker 10664 died. Starting a new worker..."}
+{"level":30,"time":1738752305454,"pid":10288,"hostname":"Temidayo","msg":"Master process 10288 is running"}
+{"level":30,"time":1738752305454,"pid":10288,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738752311163,"pid":10288,"hostname":"Temidayo","msg":"Worker 928 died. Starting a new worker..."}
+{"level":30,"time":1738752311404,"pid":10288,"hostname":"Temidayo","msg":"Worker 9896 died. Starting a new worker..."}
+{"level":30,"time":1738752311416,"pid":10288,"hostname":"Temidayo","msg":"Worker 10212 died. Starting a new worker..."}
+{"level":30,"time":1738752311650,"pid":10288,"hostname":"Temidayo","msg":"Worker 5760 died. Starting a new worker..."}
+{"level":30,"time":1738752311745,"pid":10288,"hostname":"Temidayo","msg":"Worker 11984 died. Starting a new worker..."}
+{"level":30,"time":1738752311773,"pid":10288,"hostname":"Temidayo","msg":"Worker 4704 died. Starting a new worker..."}
+{"level":30,"time":1738752324450,"pid":15136,"hostname":"Temidayo","msg":"Master process 15136 is running"}
+{"level":30,"time":1738752324450,"pid":15136,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
+{"level":30,"time":1738752345824,"pid":7380,"hostname":"Temidayo","msg":"Worker 7380 started"}
+{"level":30,"time":1738752345784,"pid":5588,"hostname":"Temidayo","msg":"Worker 5588 started"}
+{"level":30,"time":1738752346022,"pid":7380,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346022,"pid":7380,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346022,"pid":7380,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346023,"pid":7380,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346023,"pid":7380,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346023,"pid":7380,"hostname":"Temidayo","msg":"Worker 7380 is listening on port 9000"}
+{"level":30,"time":1738752346035,"pid":5588,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346035,"pid":5588,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346035,"pid":5588,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346035,"pid":5588,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346035,"pid":5588,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346036,"pid":5588,"hostname":"Temidayo","msg":"Worker 5588 is listening on port 9000"}
+{"level":30,"time":1738752346040,"pid":15288,"hostname":"Temidayo","msg":"Worker 15288 started"}
+{"level":30,"time":1738752346300,"pid":15288,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346300,"pid":15288,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346300,"pid":15288,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346300,"pid":15288,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346300,"pid":15288,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346301,"pid":15288,"hostname":"Temidayo","msg":"Worker 15288 is listening on port 9000"}
+{"level":30,"time":1738752346251,"pid":14552,"hostname":"Temidayo","msg":"Worker 14552 started"}
+{"level":30,"time":1738752346409,"pid":14552,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346409,"pid":14552,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346409,"pid":14552,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346409,"pid":14552,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346409,"pid":14552,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346410,"pid":14552,"hostname":"Temidayo","msg":"Worker 14552 is listening on port 9000"}
+{"level":30,"time":1738752346279,"pid":15068,"hostname":"Temidayo","msg":"Worker 15068 started"}
+{"level":30,"time":1738752346261,"pid":12156,"hostname":"Temidayo","msg":"Worker 12156 started"}
+{"level":30,"time":1738752346434,"pid":15068,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346434,"pid":15068,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346434,"pid":15068,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346434,"pid":15068,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346434,"pid":15068,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346434,"pid":15068,"hostname":"Temidayo","msg":"Worker 15068 is listening on port 9000"}
+{"level":30,"time":1738752346438,"pid":12156,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346438,"pid":12156,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346438,"pid":12156,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346438,"pid":12156,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346438,"pid":12156,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346439,"pid":12156,"hostname":"Temidayo","msg":"Worker 12156 is listening on port 9000"}
+{"level":30,"time":1738752346336,"pid":13616,"hostname":"Temidayo","msg":"Worker 13616 started"}
+{"level":30,"time":1738752346478,"pid":13616,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346478,"pid":13616,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346478,"pid":13616,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346478,"pid":13616,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346478,"pid":13616,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346479,"pid":13616,"hostname":"Temidayo","msg":"Worker 13616 is listening on port 9000"}
+{"level":30,"time":1738752346389,"pid":9108,"hostname":"Temidayo","msg":"Worker 9108 started"}
+{"level":30,"time":1738752346519,"pid":9108,"hostname":"Temidayo","msg":"Server listening at http://127.0.0.1:9000"}
+{"level":30,"time":1738752346519,"pid":9108,"hostname":"Temidayo","msg":"Server listening at http://172.27.0.1:9000"}
+{"level":30,"time":1738752346519,"pid":9108,"hostname":"Temidayo","msg":"Server listening at http://192.168.18.1:9000"}
+{"level":30,"time":1738752346519,"pid":9108,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
+{"level":30,"time":1738752346519,"pid":9108,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
+{"level":30,"time":1738752346520,"pid":9108,"hostname":"Temidayo","msg":"Worker 9108 is listening on port 9000"}
+{"level":30,"time":1738752364893,"pid":15136,"hostname":"Temidayo","msg":"Worker 15068 died. Starting a new worker..."}
+{"level":30,"time":1738752364903,"pid":15136,"hostname":"Temidayo","msg":"Worker 12156 died. Starting a new worker..."}
+{"level":30,"time":1738752372843,"pid":15016,"hostname":"Temidayo","msg":"Master process 15016 is running"}
+{"level":30,"time":1738752372843,"pid":15016,"hostname":"Temidayo","msg":"Number of CPUs: 8"}
