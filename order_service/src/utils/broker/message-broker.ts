@@ -20,7 +20,7 @@ const createTopic = async (topic: string[]) => {
   const topics = topic.map((t) => ({
     topic: t,
     numPartitions: 2,
-    replicationFactor: 1, // based on available brokers
+    replicationFactor: 1, 
   }));
 
   const admin = kafka.admin();

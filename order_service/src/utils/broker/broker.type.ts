@@ -4,7 +4,7 @@ export interface PublishType {
   headers?: Record<string, any>;
   topic: TOPIC_TYPE;
   event: OrderEvent;
-  message: Record<string, any>; // Change from 'data' to 'message'
+  message: Record<string, any>; 
 }
 
 export type MessageHandler = (input: MessageType) => void;

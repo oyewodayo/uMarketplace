@@ -1,7 +1,6 @@
 import { DB } from "../db/db.connection";
 import { orderLineItems, orders } from "../db/schema";
 import { OrderWithLineItems } from "../models/orderRequest";
-import { CartRepositoryType } from "../types/repository.type";
 import { eq } from "drizzle-orm";
 
 export type OrderRepositoryType = {

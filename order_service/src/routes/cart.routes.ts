@@ -10,7 +10,7 @@ export const cartRouter = async (fastify: FastifyInstance) => {
   // Add the RequestAuthorizer middleware to all routes
   fastify.addHook("onRequest", RequestAuthorizer);
 
-  // POST /cart
+  // Cart post request
   fastify.post(
     "/cart",
     {
@@ -41,7 +41,7 @@ export const cartRouter = async (fastify: FastifyInstance) => {
     }
   );
 
-  // GET /cart
+  // Cart Get request
   fastify.get("/cart", async (req: FastifyRequest, res: FastifyReply) => {
     try {
       const user = req.user;
@@ -56,7 +56,7 @@ export const cartRouter = async (fastify: FastifyInstance) => {
     }
   });
 
-  // PATCH /cart/:lineItemId
+  // Update an item in the Cart PATCH /cart/:lineItemId
   fastify.patch(
     "/cart/:lineItemId",
     async (req: FastifyRequest<{ Params: { lineItemId: string }; Body: { qty: number } }>, res: FastifyReply) => {
@@ -82,7 +82,7 @@ export const cartRouter = async (fastify: FastifyInstance) => {
     }
   );
 
-  // DELETE /cart/:lineItemId
+  // DELETE an item from the Card /cart/:lineItemId
   fastify.delete(
     "/cart/:lineItemId",
     async (req: FastifyRequest<{ Params: { lineItemId: string } }>, res: FastifyReply) => {

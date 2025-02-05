@@ -5,11 +5,10 @@ import { CatalogService } from "../services/product.service";
 import { ProductController } from "../controllers/ProductController";
 import { ProductQueryString, ProductParams, UpdateStockBody, UpdateNameBody } from "../interfaces/productInterfaces";
 
-// Create a single instance of PrismaClient
 const prisma = new PrismaClient();
 
 export const productRouter = async (fastify: FastifyInstance) => {
-  // Initialize repository with PrismaClient instance
+  // Initialization of PrismaClient instance on repository
   const repository = new ProductRepository(prisma);
   const catalogService = new CatalogService(repository);
   const controller = new ProductController(catalogService);
