@@ -1,10 +1,10 @@
 import { MessageType, OrderEvent, TOPIC_TYPE } from "../../types";
 
 export interface PublishType {
-  headers: Record<string, any>;
+  headers?: Record<string, any>;
   topic: TOPIC_TYPE;
   event: OrderEvent;
-  message: Record<string, any>;
+  message: Record<string, any>; // Change from 'data' to 'message'
 }
 
 export type MessageHandler = (input: MessageType) => void;

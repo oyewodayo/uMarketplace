@@ -1,38 +1,38 @@
-import { CartRepositoryType } from "../types/repository.type"
-import * as Repository from "../repository/cart.repository"
-import { CreateCart } from "./cart.service";
 
+import { CartRepositoryType } from "../types/repository.type";
+import * as Repository from "../repository/cart.repository";
 
-describe("cartService", ()=>{
+import { CreateCart } from "../service/cart.service";
 
-    let repo: CartRepositoryType;
-    beforeEach(()=>{
+describe("cartService", () => {
+  let repo: CartRepositoryType;
 
-        repo = Repository.CartResitory;
-    })
+  beforeEach(() => {
+    repo = Repository.CartRepository;
+  });
 
-    afterEach(()=>{
-        repo = {} as CartRepositoryType;
-    })
+  afterEach(() => {
+    repo = {} as CartRepositoryType;
+  });
 
-    it("should return correct data when cart is created", async ()=>{
-        const mockCart = {
-            title: "Television",
-            amount: 500000
-        }
+  it("should return correct data while creating cart", async () => {
+    const mockCart = {
+      title: "smart phone",
+      amount: 1200,
+    };
 
-        jest.spyOn(Repository.CartResitory, "create").mockImplementationOnce(() =>
-            Promise.resolve({
-                message:"Cart created from repository",
-                input:mockCart
-            })
-        )
+    jest.spyOn(Repository.CartRepository, "create").mockImplementationOnce(() =>
+      Promise.resolve({
+        message: "fake response from cart repository",
+        input: mockCart,
+      })
+    );
 
-        const res = await CreateCart(mockCart, repo);
-        expect(res).toEqual({
-            message:"Cart created from repository",
-            input:mockCart
-        })
+    const res = await CreateCart(mockCart, repo);
 
-    })
-})
+    expect(res).toEqual({
+      message: "fake response from cart repository",
+      input: mockCart,
+    });
+  });
+});

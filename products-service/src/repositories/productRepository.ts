@@ -31,7 +31,7 @@ export class ProductRepository implements IProductRepository {
   async update(data: Product): Promise<Product> {
     const product = await this._prisma.product.update({
       where: {
-        id: Number(data.id)  // Ensure id is converted to number
+        id: Number(data.id) 
       },
       data: {
         name: data.name,
@@ -51,9 +51,9 @@ export class ProductRepository implements IProductRepository {
   }
 
   async findOne(id: number): Promise<Product> {
-    const product = await this._prisma.product.findUnique({  // Changed from findFirst to findUnique
+    const product = await this._prisma.product.findUnique({ 
       where: {
-        id: Number(id)  // Ensure id is converted to number
+        id: Number(id) 
       },
     });
 
@@ -91,7 +91,7 @@ export class ProductRepository implements IProductRepository {
   async delete(id: number): Promise<Product> {
     const product = await this._prisma.product.delete({
       where: {
-        id: Number(id)  // Ensure id is converted to number
+        id: Number(id) 
       },
     });
 
@@ -108,7 +108,7 @@ export class ProductRepository implements IProductRepository {
     const products = await this._prisma.product.findMany({
       where: {
         id: {
-          in: ids.map(id => Number(id))  // Ensure all ids are converted to numbers
+          in: ids.map(id => Number(id)) 
         },
       },
     });

@@ -1,23 +1,23 @@
-import { OrderLineItemType, OrderWithLineItems } from "../dto/orderRequest.dto";
+import { OrderLineItemType, OrderWithLineItems } from "../models/orderRequest";
 import { CartRepositoryType } from "../repository/cart.repository";
 import { OrderRepositoryType } from "../repository/order.repository";
 import { MessageType, OrderStatus } from "../types";
+import { MessageBroker } from '../utils';
+import { TOPIC_TYPE, OrderEvent } from '../types'; 
 
 export const CreateOrder = async (
   userId: number,
   repo: OrderRepositoryType,
   cartRepo: CartRepositoryType
 ) => {
-  // find cart by customer id
   const cart = await cartRepo.findCart(userId);
   if (!cart) {
     throw new Error("Cart not found");
   }
-  // calculate total ordre amount
+
   let cartTotal = 0;
   let orderLineItems: OrderLineItemType[] = [];
 
-  // create orderline items from cart items
   cart.lineItems.forEach((item) => {
     cartTotal += item.qty * Number(item.price);
     orderLineItems.push({
@@ -30,7 +30,6 @@ export const CreateOrder = async (
 
   const orderNumber = Math.floor(Math.random() * 1000000);
 
-  // create order with line items
   const orderInput: OrderWithLineItems = {
     orderNumber: orderNumber,
     txnId: null,
@@ -40,14 +39,23 @@ export const CreateOrder = async (
     orderItems: orderLineItems,
   };
 
-  const order = await repo.createOrder(orderInput);
+  const orderId = await repo.createOrder(orderInput);
   await cartRepo.clearCartData(userId);
-  console.log("Order created", order);
-  // fire a message to subscription service [catalog service] to update stock
-  // await repo.publishOrderEvent(order, "ORDER_CREATED");
 
-  // return success message
-  return { message: "Order created successfully", orderNumber: orderNumber };
+  await MessageBroker.publish({
+    topic: 'OrderEvents',
+    event: OrderEvent.CREATE_ORDER,
+    message: {
+      orderId,
+      orderNumber,
+      customerId: userId,
+      orderItems: orderLineItems,
+      totalAmount: cartTotal.toString(),
+      status: OrderStatus.PENDING
+    }
+  });
+
+  return { message: "Order created successfully", orderNumber };
 };
 
 export const UpdateOrder = async (
@@ -55,13 +63,19 @@ export const UpdateOrder = async (
   status: OrderStatus,
   repo: OrderRepositoryType
 ) => {
-  await repo.updateOrder(orderId, status);
+  const order = await repo.updateOrder(orderId, status);
 
-  // fire a message to subscription service [catalog service] to update stock
-  // TODO: handle Kafka calls
   if (status === OrderStatus.CANCELLED) {
-    // await repo.publishOrderEvent(order, "ORDER_CANCELLED");
+    await MessageBroker.publish({
+      topic: 'OrderEvents',
+      event: OrderEvent.CANCEL_ORDER,
+      message: { 
+        orderId,
+        status: OrderStatus.CANCELLED
+      }
+    });
   }
+
   return { message: "Order updated successfully" };
 };
 

@@ -23,4 +23,10 @@ curl -X PATCH "http://localhost:3000/products/1" \
     "stock": 50
   }' && echo " - Product stock updated."
 
-
+# Update name for a specific product (PATCH)
+echo "Updating product name (PATCH)..."
+curl -X PATCH "http://localhost:3000/products/5/name" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "MacBook Pro"
+  }' && echo " - Product name updated."

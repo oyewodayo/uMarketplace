@@ -10,4 +10,10 @@ export interface ProductQueryString {
   export interface UpdateStockBody {
     stock: number;
   }
+
+  
+  // Add new interface for updating name
+  export interface UpdateNameBody {
+    name: string;
+  }
   

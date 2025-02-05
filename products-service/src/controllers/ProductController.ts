@@ -1,6 +1,6 @@
 import { FastifyRequest, FastifyReply } from 'fastify';
 import { CatalogService } from '../services/product.service';
-import { ProductParams, ProductQueryString, UpdateStockBody } from '../interfaces/productInterfaces';
+import { ProductParams, ProductQueryString, UpdateNameBody, UpdateStockBody } from '../interfaces/productInterfaces';
 
 
 
@@ -44,11 +44,34 @@ export class ProductController {
     try {
       const { id } = req.params;
       const { stock } = req.body;
-      const data = await this.interactor.updateProduct({ id, stock });
+      const data = await this.interactor.updateProduct({ 
+        id: Number(id), 
+        stock,
+        updateType: 'stock' 
+      });
       return res.status(200).send(data);
     } catch (error) {
       console.error(error);
       return res.status(500).send({ error: 'Internal Server Error'+error });
+    }
+  }
+
+  async onUpdateName(
+    req: FastifyRequest<{ Params: ProductParams; Body: UpdateNameBody }>,
+    res: FastifyReply
+  ) {
+    try {
+      const { id } = req.params;
+      const { name } = req.body;
+      const data = await this.interactor.updateProduct({ 
+        id: Number(id),
+        name,
+        updateType: 'name'
+      });
+      return res.status(200).send(data);
+    } catch (error) {
+      console.error(error);
+      return res.status(500).send({ error: 'Internal Server Error: ' + error });
     }
   }
 }

@@ -16,30 +16,33 @@ export class CatalogService {
     return data;
   }
 
-  async updateProduct(input: { id: number; stock: number }): Promise<Product> {
-    // First, fetch the existing product
+  async updateProduct(input: { 
+    id: number; 
+    stock?: number;
+    name?: string;
+    updateType: 'stock' | 'name';
+  }): Promise<Product> {
     const existingProduct = await this._repository.findOne(input.id);
     if (!existingProduct) {
       throw new Error("Product not found");
     }
 
-    // Create a new Product instance with updated stock
+    // Create updated product based on update type
     const updatedProduct = new Product(
-      existingProduct.name,
+      input.updateType === 'name' ? input.name! : existingProduct.name,
       existingProduct.description,
       existingProduct.price,
-      input.stock,
+      input.updateType === 'stock' ? input.stock! : existingProduct.stock,
       existingProduct.id
     );
 
-    // Update the product with all required fields
     const data = await this._repository.update(updatedProduct);
     if (!data.id) {
       throw new Error("Unable to update product");
     }
     return data;
   }
-
+  
   async getProducts(limit: number, offset: number) {
     return await this._repository.find(limit, offset);
   }
