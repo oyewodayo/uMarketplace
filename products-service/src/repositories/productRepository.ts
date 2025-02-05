@@ -1,54 +1,127 @@
-import { PrismaClient } from "@prisma/client";
-import { IProductRepository } from "../interfaces/iProductRepository"
-import { Product } from "../models/product.model";
-import { NotFoundError } from "../utils/error";
+import { PrismaClient } from '@prisma/client';
+import { Product } from '../entities/Product';
+import { IProductRepository } from '../interfaces/iProductRepository';
 
 export class ProductRepository implements IProductRepository {
-  _prisma: PrismaClient;
+  private _prisma: PrismaClient;
 
-  constructor() {
-    this._prisma = new PrismaClient();
+  constructor(prisma: PrismaClient) {
+    this._prisma = prisma;
   }
 
   async create(data: Product): Promise<Product> {
-    return this._prisma.product.create({
-      data,
+    const product = await this._prisma.product.create({
+      data: {
+        name: data.name,
+        description: data.description,
+        price: data.price,
+        stock: data.stock,
+      },
     });
+
+    return new Product(
+      product.name,
+      product.description,
+      product.price,
+      product.stock,
+      product.id
+    );
   }
+
   async update(data: Product): Promise<Product> {
-    return this._prisma.product.update({
-      where: { id: data.id },
-      data,
+    const product = await this._prisma.product.update({
+      where: {
+        id: Number(data.id)  // Ensure id is converted to number
+      },
+      data: {
+        name: data.name,
+        description: data.description,
+        price: data.price,
+        stock: data.stock,
+      },
     });
+
+    return new Product(
+      product.name,
+      product.description,
+      product.price,
+      product.stock,
+      product.id
+    );
   }
-  async delete(id: any) {
-    return this._prisma.product.delete({
-      where: { id },
+
+  async findOne(id: number): Promise<Product> {
+    const product = await this._prisma.product.findUnique({  // Changed from findFirst to findUnique
+      where: {
+        id: Number(id)  // Ensure id is converted to number
+      },
     });
+
+    if (!product) {
+      throw new Error('Product not found');
+    }
+
+    return new Product(
+      product.name,
+      product.description,
+      product.price,
+      product.stock,
+      product.id
+    );
   }
+
   async find(limit: number, offset: number): Promise<Product[]> {
-    return this._prisma.product.findMany({
+    const products = await this._prisma.product.findMany({
       take: limit,
       skip: offset,
     });
-  }
-  async findOne(id: number): Promise<Product> {
-    const product = await this._prisma.product.findFirst({
-      where: { id },
-    });
-    if (product) {
-      return Promise.resolve(product);
-    }
-    throw new NotFoundError("product not found");
+
+    return products.map(
+      (product) =>
+        new Product(
+          product.name,
+          product.description,
+          product.price,
+          product.stock,
+          product.id
+        )
+    );
   }
 
-  findStock(ids: number[]): Promise<Product[]> {
-    return this._prisma.product.findMany({
+  async delete(id: number): Promise<Product> {
+    const product = await this._prisma.product.delete({
+      where: {
+        id: Number(id)  // Ensure id is converted to number
+      },
+    });
+
+    return new Product(
+      product.name,
+      product.description,
+      product.price,
+      product.stock,
+      product.id
+    );
+  }
+
+  async findStock(ids: number[]): Promise<Product[]> {
+    const products = await this._prisma.product.findMany({
       where: {
         id: {
-          in: ids,
+          in: ids.map(id => Number(id))  // Ensure all ids are converted to numbers
         },
       },
     });
+
+    return products.map(
+      (product) =>
+        new Product(
+          product.name,
+          product.description,
+          product.price,
+          product.stock,
+          product.id
+        )
+    );
   }
 }

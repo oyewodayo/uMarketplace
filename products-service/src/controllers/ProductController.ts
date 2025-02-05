@@ -48,7 +48,7 @@ export class ProductController {
       return res.status(200).send(data);
     } catch (error) {
       console.error(error);
-      return res.status(500).send({ error: 'Internal Server Error' });
+      return res.status(500).send({ error: 'Internal Server Error'+error });
     }
   }
 }

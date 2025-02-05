@@ -1,4 +1,5 @@
 import { IProductRepository } from "../interfaces/iProductRepository";
+import { Product } from "../entities/Product";
 
 export class CatalogService {
   private _repository: IProductRepository;
@@ -15,8 +16,24 @@ export class CatalogService {
     return data;
   }
 
-  async updateProduct(input: any) {
-    const data = await this._repository.update(input);
+  async updateProduct(input: { id: number; stock: number }): Promise<Product> {
+    // First, fetch the existing product
+    const existingProduct = await this._repository.findOne(input.id);
+    if (!existingProduct) {
+      throw new Error("Product not found");
+    }
+
+    // Create a new Product instance with updated stock
+    const updatedProduct = new Product(
+      existingProduct.name,
+      existingProduct.description,
+      existingProduct.price,
+      input.stock,
+      existingProduct.id
+    );
+
+    // Update the product with all required fields
+    const data = await this._repository.update(updatedProduct);
     if (!data.id) {
       throw new Error("Unable to update product");
     }
