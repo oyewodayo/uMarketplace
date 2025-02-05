@@ -33,3 +33,6 @@ npx prisma migrate dev
 npm run db:generate
 npm run db:push
 npm run db:migrate
+
+# Products
+- GET 

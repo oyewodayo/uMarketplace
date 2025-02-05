@@ -2,6 +2,7 @@ import Fastify from "fastify";
 import cors from "@fastify/cors";
 import { cartRouter } from "./routes/cart.routes";
 import { orderRouter } from "./routes/order.routes";
+import fastifyRateLimit from "@fastify/rate-limit";
 
 
 const fastify = Fastify({
@@ -20,8 +21,13 @@ const fastify = Fastify({
     }
 });
 
-// Register plugins
 fastify.register(cors);
+
+
+fastify.register(fastifyRateLimit, {
+    max: 80, 
+    timeWindow: "1 minute"
+});
 
 // Add worker ID to all responses
 fastify.addHook('preHandler', async (request, reply) => {
@@ -29,11 +35,10 @@ fastify.addHook('preHandler', async (request, reply) => {
 });
 
 
-// Register routes
 fastify.register(cartRouter);
 fastify.register(orderRouter);
 
-// Health check endpoint
+
 fastify.get('/health', async () => {
     return {
         status: 'ok',

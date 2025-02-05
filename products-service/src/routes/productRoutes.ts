@@ -10,7 +10,7 @@ const controller = new ProductController(interactor);
 
 
 export const productRouter = async (fastify: FastifyInstance)=>{
-    fastify.post("/products", controller.onCreateProduct.bind(controller));
+    fastify.post("${}/products", controller.onCreateProduct.bind(controller));
     fastify.get("/products", controller.onGetProducts.bind(controller));
     fastify.put("/products/:id", controller.onUpdateStock.bind(controller));
 }

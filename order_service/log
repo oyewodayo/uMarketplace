@@ -121,3 +121,5 @@
 {"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.112.1:9000"}
 {"level":30,"time":1738439923128,"pid":9240,"hostname":"Temidayo","msg":"Server listening at http://192.168.0.2:9000"}
 {"level":30,"time":1738439923129,"pid":9240,"hostname":"Temidayo","msg":"Worker 9240 is listening on port 9000"}
+{"level":30,"time":1738671821059,"pid":5340,"hostname":"Temidayo","msg":"Worker 10476 died. Starting a new worker..."}
+{"level":30,"time":1738671821085,"pid":5340,"hostname":"Temidayo","msg":"Worker 4720 died. Starting a new worker..."}
